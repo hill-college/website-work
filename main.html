@@ -77,6 +77,24 @@
                             <div id="api" role="main">
                             <h1>Sign In</h1>
                             <h4 style="color:red;">Currently Unavailable</h4>
+
+                            <div id="formsAuthenticationArea">
+                                <div id="userNameArea">
+                                    <input id="userNameInput" name="UserName" type="email" value="" tabindex="1" class="text fullWidth" spellcheck="false" placeholder="Email Address or Account Number" autocomplete="off">     
+                                </div>
+                
+                                <div id="passwordArea">
+                                     <input id="passwordInput" name="Password" type="password" tabindex="2" class="text fullWidth" placeholder="Password" autocomplete="off">                                   
+                                </div>
+                                <div id="kmsiArea" style="display:none">
+                                    <input type="checkbox" name="Kmsi" id="kmsiInput" value="true" tabindex="3">
+                                    <label for="kmsiInput">Keep me signed in</label>
+                                </div>
+                                <div id="submissionArea" class="submitMargin">
+                                    <span id="submitButton" class="submit" tabindex="4" onkeypress="if (event &amp;&amp; event.keyCode == 32) Login.submitLoginRequest();" onclick="return Login.submitLoginRequest();">Sign in</span>
+                                <span class="submit" tabindex="5">Forgot Password?</span></div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
